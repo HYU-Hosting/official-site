@@ -574,7 +574,7 @@ const posts = {
   }
 };
 
-const post = posts[slug];
+const post = posts[slug as keyof typeof posts];
 if (!post) return Astro.redirect('/404');
 ---
 

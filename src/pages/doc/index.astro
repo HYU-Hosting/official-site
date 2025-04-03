@@ -101,7 +101,7 @@ const categories = [...new Set(posts.map(post => post.category))];
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post, index) => (
           <div class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up" style={'animation-delay: ' + (index * 100) + 'ms'}>
-            <a href={'/blog/' + post.id} class="block">
+            <a href={'/doc/' + post.id} class="block">
               <img 
                 src={post.image} 
                 alt={post.title}
@@ -115,7 +115,7 @@ const categories = [...new Set(posts.map(post => post.category))];
                 <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
                 <span class="text-sm text-gray-500 dark:text-gray-400">{post.date}</span>
               </div>
-              <a href={'/blog/' + post.id} class="block mb-3">
+              <a href={'/doc/' + post.id} class="block mb-3">
                 <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{post.title}</h2>
               </a>
               <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>
