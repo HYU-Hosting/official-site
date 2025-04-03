@@ -89,13 +89,8 @@ const categories = [...new Set(posts.map(post => post.category))];
     <div class="container-custom py-8">
       <div class="flex flex-wrap gap-4 justify-center mb-12">
         <a href="#" class="px-4 py-2 rounded-full bg-primary-600 text-white font-medium text-sm hover:bg-primary-700 transition-colors">
-          All Posts
+          All Documents
         </a>
-        {categories.map((category) => (
-          <a href={'#' + category.toLowerCase().replace(/\s+/g, '-')} class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-            {category}
-          </a>
-        ))}
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
