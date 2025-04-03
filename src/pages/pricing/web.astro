@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import PricingCmp from '../../components/Pricing.astro';
+import Footer from '../../components/Footer.astro';
+import HeroSection from '../../components/HeroSection.astro';
+---
+
+<Layout title="Pricing - SaaSify">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Web Pricing" 
+      highlightText="Web"
+      description="Choose the plan that works best for your business. All plans include a 14-day free trial with no credit card required."
+    />
+    <PricingCmp />
+  </main>
+  <Footer />
+</Layout>
