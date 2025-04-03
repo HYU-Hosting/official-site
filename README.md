@@ -1,19 +1,22 @@
 # Official Website of XXX Hosting
 
-## How to Clone & Push
-### 1. Clone
+## How to Preview & Build
+### Preview
+#### Install
 ```bash
-git clone git@github.com:HYU-Hosting/official-site.git
+pnpm i
 # or
-git clone https://github.com/HYU-Hosting/official-site.git
+npm install
 ```
-### 2. Add Remote
+#### Preview
 ```bash
-git remote add origin git@github.com:HYU-Hosting/official-site.git
+pnpm dev
 # or
-git remote add origin https://github.com/HYU-Hosting/official-site.git
+npm run dev
 ```
-### 3. Edit Branch
+### Build
 ```bash
-git push -u origin main
+pnpm build      # output at dist
+# or
+npm run build   # output at dist
 ```
